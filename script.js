@@ -27,6 +27,18 @@ var firebaseConfig = {
     var codigoAsesor = document.getElementById("codigoAsesor").value;
     var codigoOficina = document.getElementById("codigoOficina").value;
     var aceptaPolitica = document.getElementById("aceptaPolitica").value;
+
+    // Obtén el valor seleccionado en el campo de política de privacidad
+     var aceptaPolitica = document.getElementById("aceptaPolitica").value;
+
+  // Verifica si el valor es "no"
+      if (aceptaPolitica === "no") {
+    // Muestra un pop-up o mensaje de advertencia
+        alert("Debes aceptar la política de privacidad para enviar el formulario.");
+        return; // Detiene el envío del formulario
+  }
+
+  // Si el valor es distinto de "no", el formulario se envía normalmente
   
     // Guarda los valores en Firestore
     db.collection("/CLIENTES").add({
