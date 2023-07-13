@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario clientes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="logo-container">
+        <img src="./img/logo.png" alt="Logo de la empresa">
+    </div>
+    <form id="miFormulario">
+        <label for="nombresApellidos">Nombres y Apellidos:</label>
+        <input type="text" id="nombresApellidos" required>
+
+        <label for="numeroDocumento">Número de documento:</label>
+        <input type="number" id="numeroDocumento" required>
+
+        <label for="producto">Producto:</label>
+        <select id="producto" required>
+            <option value="">Selecciona una opción</option>
+            <option value="tarjetas">Tarjetas de crédito</option>
+            <option value="creditos">Créditos</option>
+            <option value="seguros">Seguros</option>
+            <option value="inversiones">Inversiones</option>
+            <option value="cuentas">Cuentas Bancolombia</option>
+        </select>
+
+        <label for="codigoAsesor">Código del asesor:</label>
+        <input type="number" id="codigoAsesor" required>
+
+        <label for="codigoOficina">Código de oficina:</label>
+        <input type="number" id="codigoOficina" required>
+
+        <label for="aceptaPolitica">Acepta política de privacidad:</label>
+        <select id="aceptaPolitica" required>
+            <option value="">Selecciona una opción</option>
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+        <a href="https://bit.ly/3HfnqwZ" target="_blank">Ver política de privacidad</a>
+        <br>
+        <br>
+
+        <button type="submit">Enviar</button>
+        <button onclick="window.location.href = 'https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:cff582c2-4ced-4986-9b56-9055a78b3355';">Siguiente</button>
+    </form>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+.logo-container {
+    text-align: center;
+    margin-bottom: 5px; /* Ajusta el valor según sea necesario */
+  }
+  
+  .logo-container img {
+    max-width: 400px; /* Ajusta el tamaño de acuerdo a tus necesidades */
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 5px; /* Ajusta el valor según sea necesario */
+  }
+  
+  /* Resto de los estilos y media queries */
+  
+  form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  form input,
+  form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    background-color: yellow;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media (max-width: 600px) {
+    form {
+      max-width: 90%;
+    }
+  }
+  
